@@ -72,7 +72,7 @@ public class WebSecurityConfig {
         http.exceptionHandling((exceptionHandling) ->
                 exceptionHandling
                         // "접근 불가" 페이지 URL 설정
-                        .accessDeniedPage("/forbidden,html")
+                        .accessDeniedPage("/forbidden.html")
         );
 
         return http.build();
